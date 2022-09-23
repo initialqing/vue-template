@@ -1,13 +1,12 @@
 <template>
-    <button btn text-sm m-3 mt-10 border-none>UnoCss</button>
-    <!--i-carbon-logo-github https://github.com/unocss/unocss/tree/main/packages/preset-icons/ -->
-    <div icon-btn i-iconoir-3d-center-box></div>
+    <div>123</div>
+    <Footer></Footer>
 </template>
 
-<script setup>
-
+<script setup lang="ts">
+    import Footer from './components/Footer.vue'
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
