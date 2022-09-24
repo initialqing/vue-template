@@ -7,10 +7,18 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <title>vue-template</title>
 </head>
-<body>
-    <div id="app">
-        
-    </div>
+<body class="font-sans dark:text-white dark:bg-hex-121212">
+    <div id="app"> </div>
+    <script>
+        (function() {
+            const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+            const setting = localStorage.getItem('color-schema') || 'auto'
+
+            if (setting === 'dark' || (prefersDark && setting !== 'light'))
+                document.documentElement.classList.toggle('dark', true)
+                console.log(document.documentElement.classList)
+        })()
+    </script>
     <script type="module" src="/src/main.ts"></script>
 </body>
 </html>

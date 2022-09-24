@@ -1,6 +1,7 @@
 <template>
-    <div>123</div>
-    <Footer></Footer>
+    <main font-sans text="center dark:gray-200">
+        <Footer/>
+    </main>
 </template>
 
 <script setup lang="ts">

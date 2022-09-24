@@ -6,22 +6,26 @@
     "lib": [
       "ESNext",
       "DOM"
-    ], 
-    "esModuleInterop": true, 
-    "forceConsistentCasingInFileNames": true, 
+    ],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "moduleResolution": "Node",
-    "resolveJsonModule": true, 
-    "noUnusedLocals": true, 
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
     "strictNullChecks": true,
-    "allowJs": true, 
-    "strict": true, 
-    "skipLibCheck": true, 
+    "allowJs": true,
+    "strict": true,
+    "skipLibCheck": true,
     "jsx": "preserve",
+    // "isolatedModules": true,每个ts文件视为独立的模块，导入类型的时候需要使用import type
     "paths": {
       "~/*": [
         "src/*"
       ]
     },
+    "types": [
+      "vite/client"
+    ]
   },
   "exclude": [
     "node_modules",
