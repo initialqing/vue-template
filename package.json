@@ -1,13 +1,18 @@
 {
-  "name": "vue-templete",
+  "name": "vue-template",
+  "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "a template for vite",
+  "main": "main.ts",
+  "type": "module",
   "scripts": {
-    "dev": "vite"
+    "dev": "vite --port 5173",
+    "build": "vue-tsc --noEmit && vite build",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.vue --ignore-path .gitignore --fix src",
+    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,vue}\" --ignore-path .gitignore"
   },
   "keywords": [],
-  "author": "",
+  "author": "initialqing",
   "license": "ISC",
   "dependencies": {
     "@vueuse/core": "^9.2.0",
@@ -16,10 +21,17 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.1.111",
+    "@rushstack/eslint-patch": "^1.2.0",
     "@types/node": "^18.7.18",
     "@unocss/reset": "^0.45.22",
     "@vitejs/plugin-vue": "^3.1.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
+    "eslint": "^8.24.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.5.1",
     "pnpm": "^7.12.2",
+    "prettier": "^2.7.1",
     "typescript": "^4.8.3",
     "unocss": "^0.45.22",
     "vite": "^3.1.3",
