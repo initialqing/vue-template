@@ -20,7 +20,7 @@
     <input
       id="input"
       v-model="name"
-      placeholder="Please Type your name"
+      placeholder="Please type your name"
       type="text"
       text="center"
       bg="transparent"
