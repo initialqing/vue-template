@@ -17,6 +17,14 @@ export default defineConfig({
       'icon-btn',
       'text-[1.5em] inline-block cursor-pointer select-none opacity-75 transition duration-200 ease-in-out hover:opacity-100 hover:text-teal-600 !outline-none',
     ],
+    [
+      'icon-preview',
+      'text-9xl inline-block mt-20 cursor-pointer hover:text-cyan-600 inline-block ',
+    ],
+    [
+      'icon-bottom-btn',
+      'px-6 py-1 rounded bg-cyan-800 text-white cursor-pointer hover:bg-cyan-600 !outline-none',
+    ],
   ],
   presets: [presetUno(), presetAttributify(), presetIcons(), presetWebFonts()],
   transformers: [

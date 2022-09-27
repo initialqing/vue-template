@@ -1,5 +1,6 @@
 <template>
   <main font-sans text="center dark:gray-200">
+    <router-view />
     <Footer />
   </main>
 </template>
